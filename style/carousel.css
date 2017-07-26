@@ -1,0 +1,322 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+#logo{
+    color:#3681fa;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+    
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+   
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+    padding-right: 5%;
+    font-weight:bold;  
+}
+.navbar-inverse {
+    background-color: #393939;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+  font-weight: bold;
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+.m1 li a {
+    font-size: 1.3em;
+    display:run-in;
+	clear: both;
+	line-height: 1.428571429;
+	white-space: pre;
+    color: #262626;
+    
+}
+.m2 li a {
+    font-size: 1.7em;
+    display:run-in;
+	clear: both;
+	line-height: 1.428571429;
+	white-space: pre;
+    color: #262626;
+    
+}
+.m2 li a:hover {
+    
+    opacity: 20%;
+	text-decoration: none;
+	color:#3681fa;
+	background-color: #f5f5f5;
+}
+.m1 li a:hover {
+    
+    opacity: 20%;
+	text-decoration: none;
+	color:#3681fa;
+	background-color: #f5f5f5;
+}
+.thumbnail {
+    position: relative;
+}
+
+.caption  {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    
+}
+.caption p {
+    color:beige;
+}
+.bg {
+   background: url('../img/catalog.jpg') no-repeat center center;
+  position:fixed;
+  width: 100%;
+  height: 400px; /*same height as jumbotron */
+  top:9%;
+  left:0;
+  
+  z-index: -1;
+    background-color:  rgba(161, 193, 255, 0.04);
+}
+.bg1 {
+  background: url('../img/jeep2.jpg') no-repeat center center;
+  position:fixed;
+  width: 100%;
+  height: 400px; /*same height as jumbotron */
+  top:9%;
+  left:0;
+  z-index: -1;
+    background-color:  rgba(161, 193, 255, 0.04);
+}
+.bg2 {
+  background: url('../img/bmw.jpg') no-repeat center center;
+  position:fixed;
+  width: 100%;
+  height: 400px; /*same height as jumbotron */
+  top:9%;
+  left:0;
+  z-index: -1;
+    background-color:  rgba(161, 193, 255, 0.04);
+}
+.bg3 {
+   background: url('../img/h1.jpg') no-repeat center center;
+  position:fixed;
+  width: 100%;
+  height: 400px; /*same height as jumbotron */
+  top:9%;
+  left:0;
+  z-index: -1;
+    background-color:  rgba(161, 193, 255, 0.04);
+}
+.bg4 {
+  background: url('../img/mercedes.jpg') no-repeat center center;
+  position:fixed;
+  width: 100%;
+  height: 400px; /*same height as jumbotron */
+  top:9%;
+  left:0;
+  z-index: -1;
+    background-color:  rgba(161, 193, 255, 0.04);
+}
+
+
+.jumbotron {
+  height: 400px;
+  color: #777777;
+  font-family:monospace;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+.jumbotron h1 {
+    color:#777777;
+}
+.card-span{
+    color: #777777;
+}
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#f9f9f9;
+}
+
+.form-signin {
+    max-width: 500px;
+    padding: 19px 29px 29px;
+    margin: 0 auto;
+	//margin-top:90px;
+    background-color: #fff;
+	
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#990000;
+	font-weight:lighter;
+}
+
+.form-signin .form-signin-heading{
+    color:#00A2D1;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"],
+.form-signin input[type="email"] {
+    font-size: 16px;
+    height: auto;
+    padding: 7px 9px;
+}
+
+.signin-form
+{
+	//border:solid red 1px;
+	margin-top:80px;
+}
+.navbar-brand{
+	font-family:"Lucida Handwriting";
+    font-weight: lighter;
+}
+#btn-submit{
+	height:45px;
+}

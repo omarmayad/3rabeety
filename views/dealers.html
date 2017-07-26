@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/favicon.ico">
+
+    <title>3rabeety</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../style/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../style/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="script/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../script/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="../style/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a id="logo"class="navbar-brand "href="../index.php"><img class="img-logo img-responsive " name="image" src="../img/logo/logo2.png" alt="logo"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href="../index.php">Home</a></li>
+                <li ><a href="../views/aboutus.html">About 3rabeety</a></li>
+                <li><a href="../views/contactus.html">Contact Us</a></li>
+              
+   
+                                
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">View Catalog <b class="caret"></b></a>
+        <ul class="dropdown-menu  ">
+            <li >
+                <div class="row " style="width:100%">
+                    <ul class="m1  list-inline list-unstyled col-xs-12 col-sm-8 col-sm-push-2  ">
+                        <li class="list-inline-item glyphicon glyphicon-piggy-bank" ><a href="../views/catalog.php#Budget">Budget</a></li>
+                        <li class="list-inline-item glyphicon glyphicon-filter"><a href="../views/catalog.php#Usage">Usage</a></li>
+                        <li class="list-inline-item glyphicon glyphicon-globe"><a href="../views/catalog.php#Brand">Brand</a></li>
+                        <li class="list-inline-item glyphicon glyphicon-fire"><a href="../views/catalog.php#Newest">Newest</a></li>
+                        <li class="list-inline-item glyphicon glyphicon-thumbs-up"><a href="../views/catalog.php#Recommedned">Recommended</a></li>
+                        <li class="list-inline-item glyphicon glyphicon-heart-empty"><a href="../views/catalog.php#Bestseller">Bestseller</a></li>
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+<li ><a href="../views/renting.html">Rent a Car</a></li>
+                     <li ><a href="../views/Service_center.html">Service centers</a></li>
+              </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a id="loginA"  href="#"  onclick="openModal()">Login</a>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+      <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form" action="/"method="?"> 
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email address</label>
+                            <input type="email" class="form-control input-sm" id="email" name="email" placeholder="Email">
+                        </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                            <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Password">
+                    </div>
+                     <div class="checkbox">
+                         <label>
+                            <input type="checkbox">Remember me
+                        </label>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Not registered yet?<span><a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Register</a></span></p>
+                    <button type="submit" class="btn btn-primary btn-xs">Login</button><button type="button" class="btn btn-default btn-xs"
+                       data-dismiss="modal">Cancel</button>
+                    </div>
+                   
+                    
+                </form>
+                 </div>
+            </div>
+        </div>
+    </div>  
+      <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Register </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form" role="form" action="/"method="?"> 
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email address</label>
+                            <input type="email" class="form-control input-sm" id="email" name="email" placeholder="Email">
+                        </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                            <input type="password" class="form-control input-sm" id="password" name="password" placeholder="Password">
+                    </div>
+                     <div class="checkbox">
+                         <label>
+                            <input type="checkbox">Keep me signed in</label>
+                       
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already registered ?<span><a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Login</a></span></p>
+                    <button type="submit" class="btn btn-primary btn-xs">Sign up</button><button type="button" class="btn btn-default btn-xs"
+                       data-dismiss="modal"  >Cancel</button>
+                    </div>
+                   
+                    
+                </form>
+                 </div>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide img-responsive" src="../img/10_car.jpg" data-src="../img/10_car.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>3rabeety</h1>
+              <p>Signup to be one of our users and gain all the priviliges we offer and get the best car deals and know where to find your dream car. It's as easy as ever!</p>
+              <p><a class="btn btn-lg btn-primary"  role="button" id="RegisterA"  href="#"  onclick="openModal1()">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide img-responsive" src="../img/10_cars.jpg"  data-src="../img/10_cars.jpg"alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>About 3rabeety</h1>
+              <p>There’s a rapidly growing movement of people in Egypt who are choosing a new way to buy their next car. A better way. This is 3rabeety, the way forward..</p>
+              <p><a class="btn btn-lg btn-primary" href="../views/aboutus.html" role="button">About 3rabeety</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+             <img class="third-slide img-responsive" src="../img/10_carsss.jpg"  data-src="../img/10_carsss.jpg"alt="Third slide">
+<!--          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">-->
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Not sure what car you want?</h1>
+              <p>Take a round and go through the cars we got for you, we're sure you'll find what you're looking for!</p>
+              <p><a class="btn btn-lg btn-primary" href="../views/catalog.php" role="button">View Catalog</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+                <ol class="breadcrumb">
+                  <li><a href="../index.php">Home</a></li>
+                  <li ><a href="Service_center.html">Service Center</a></li>
+                    <li class="active">Golden auto service</li>
+                </ol>
+<div class="container">
+ <div class="card col-xs-12 col-sm-4" >
+              <img class="card-img-top img-responsive img-thumbnail" name="image" src="../img/ashraf/NW6673.jpg" alt="Card image cap">
+              <div class=" card card-block">
+                  <h3 class="card-text" name="address" value=""><strong><span class="card-span">Address</span> 	شارع الكابلات - المطرية - القاهره - مصر</strong></h3>
+                  <h3 class="card-text" name="about" value=""><strong><span class="card-span">About the center</span>	موزع قطع غيار معتمد ( غبور -جيلى ) كما تقدم الشركة خصم خاص بمناسبة الآفتتاح وتقدم عروض أخرى مميذة . كما تقدم الشركة خدمات ما بعد البيع </strong></h3>
+                  <h3 class="card-text" name="telephone" value=""><strong><span class="card-span">Telephone</span> <a type="button" class="btn btn-primary" href="tel:+02-22836607">02-22836607 </a> <a type="button" class="btn btn-primary" href="tel:+01111123863">01111123863</a></strong></h3>
+                  <h3 class="card-text" name="working_hours" value=""><strong><span class="card-span">Working hours</span> From (9 am- 10 pm) all days except sunday</strong></h3>
+              </div>
+                    </div>  
+                        
+
+ </div>
+          
+<hr class="featurette-divider">
+
+      <!-- FOOTER -->
+        <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+          <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+        <p>&copy; 2017 3rabeety, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+          
+       
+      </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../script/jquery.min.js"><\/script>')</script>
+    <script src="../script/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../script/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../script/ie10-viewport-bug-workaround.js"></script>
+           <script src="../script/script.js"></script>
+  </body>
+</html>
